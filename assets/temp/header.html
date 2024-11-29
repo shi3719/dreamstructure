@@ -1,0 +1,76 @@
+<!-- pc -->
+
+<div class="header_wrap_pc">
+    <div class="menu_wrap">
+        <div class="logo_wrap">
+            <img src="/assets/images/logo_red.png" alt="">
+        </div>
+        <ul class="top_menu">
+            <li>
+                <p>BUSINESS PART</p>
+                <div class="header_sub header_sub_1">
+                    <ul>
+                        <li>구조설계</li>
+                        <li>안전진단</li>
+                        <li>기타 업무</li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <p>PERFORMANCE</p>
+                <div class="header_sub header_sub_2">
+                    <ul>
+                        <li>구조설계</li>
+                        <li>안전진단</li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <p>ABOUT US</p>
+                <div class="header_sub header_sub_3">
+                    <ul>
+                        <li>연혁</li>
+                        <li>인증서</li>
+                        <li>오시는 길</li>
+                        <li>채용</li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div onclick="location.href='/'" class="btn ico_btn">
+        <div class="people"></div>
+        <p>상시채용</p>
+    </div>
+</div>
+
+
+<!-- mobile -->
+
+<div class="header_wrap_mobile">
+    <div class="logo_wrap">
+        <img src="/assets/images/logo_red.png" alt="">
+    </div>
+    <div class="button_container" id="mobile_menu_open">
+        <span class="top"></span>
+        <span class="middle"></span>
+        <span class="bottom"></span>
+    </div>
+</div>
+
+<div class="mobile_menu_popup">
+
+</div>
+
+<script>
+    // 햄버거 메뉴 조절
+    const mobileMenuOpenBtn = document.querySelector('#mobile_menu_open');
+    const mobileMenuPopup = document.querySelector('.mobile_menu_popup');
+
+    mobileMenuOpenBtn.addEventListener('click', () => {
+        console.log('test')
+        mobileMenuOpenBtn.classList.add('active');
+        mobileMenuPopup.classList.add('on');
+    })
+</script>

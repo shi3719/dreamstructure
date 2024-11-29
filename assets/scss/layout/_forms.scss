@@ -1,0 +1,369 @@
+// basic
+
+// header
+header {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    @include transition02;
+
+    width: 100%;
+    padding: 0 calc((100% - 1024px) / 2);
+    background-color: $white;
+
+    &.transparent {
+        background-color: transparent;
+
+        @include web{
+            &:hover {
+                background-color: $white;
+            }
+        }
+    }
+}
+
+@keyframes menuHeight {
+    from {
+        max-height: 0;
+    }
+
+    to {
+        max-height: 180px;
+    }
+}
+
+.header_wrap_pc {
+    @include flex_between_center;
+
+    .logo_wrap {
+        width: 140px;
+        margin-right: 80px;
+        cursor: pointer;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .top_menu {
+        @include flex_start_center;
+
+        >li {
+            width: 130px;
+            margin-right: 60px;
+            cursor: pointer;
+
+            p {
+                @include boldP;
+                font-weight: 800;
+                @include transition02;
+                color: $black;
+                padding: 30px 0;
+            }
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            &:hover {
+                p {
+                    color: $primary;
+                }
+
+                .header_sub {
+                    animation-name: menuHeight;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    .ico_btn {
+        background-color: $lightBg;
+        @include transition02;
+
+        &:hover {
+            background-color: #F0F0F0;
+        }
+    }
+
+    .menu_wrap {
+        @include flex_start_center;
+    }
+}
+
+.ico_btn {
+    @include flex_start_center;
+    align-items: center;
+
+    padding: 6px 20px 6px 19px;
+    cursor: pointer;
+
+    >div:first-child {
+        margin-right: 9px;
+    }
+
+    P {
+        @include boldP;
+    }
+}
+
+.header_sub {
+    @include transition04;
+    position: fixed;
+    top: 82px;
+    left: 0;
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+
+    width: 100%;
+    padding: 0 calc((100% - 1024px) / 2);
+    background-color: rgba($color: $white, $alpha: 0.8);
+
+    animation-duration: .4s;
+    animation-fill-mode: forwards;
+
+    ul {
+        padding: 21px 0;
+    }
+
+    li {
+        @include medSmallP;
+        @include transition02;
+        font-size: 15px;
+        color: $black;
+
+        margin-bottom: 8px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &:hover {
+            color: $primary;
+        }
+    }
+
+    &.header_sub_1 ul {
+        margin-left: 220px;
+    }
+
+    &.header_sub_2 ul {
+        margin-left: 410px;
+    }
+
+    &.header_sub_3 ul {
+        margin-left: 600px;
+    }
+}
+
+// header_mobile
+.header_wrap_mobile {
+    z-index: 100;
+    .button_container {
+        position: relative;
+        width: 35px;
+        height: 27px;
+        cursor: pointer;
+        transition: opacity .25s ease;
+
+        &:hover {
+            opacity: .7;
+        }
+
+        &.active {
+            .top {
+                transform: translateY(11px) translateX(0) rotate(45deg);
+                background: $primary;
+            }
+
+            .middle {
+                opacity: 0;
+                background: $primary;
+            }
+
+            .bottom {
+                transform: translateY(-11px) translateX(0) rotate(-45deg);
+                background: $primary;
+            }
+        }
+
+        span {
+            background: $primary;
+            border: none;
+            height: 5px;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: all .35s ease;
+            cursor: pointer;
+
+            &:nth-of-type(2) {
+                top: 11px;
+            }
+
+            &:nth-of-type(3) {
+                top: 22px;
+            }
+        }
+    }
+
+}
+
+// footer
+footer {
+    @include transition02;
+
+    width: 100%;
+    padding: 50px calc((100% - 1024px) / 2);
+    padding-bottom: 80px;
+    background-color: $primary;
+    color: $white;
+
+    position: relative;
+}
+
+.footer_wrap {
+    @include flex_start;
+    margin-bottom: 40px;
+
+    .logo_wrap {
+        width: 140px;
+        margin-right: 36px;
+        cursor: pointer;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .top_menu {
+        @include flex_start_center;
+
+        >li {
+            padding-right: 20px;
+            cursor: pointer;
+
+            p {
+                @include boldP;
+                font-size: 13px;
+                @include transition02;
+                color: rgba($color: $white, $alpha: 0.8);
+            }
+
+            &:last-child {
+                padding-right: 0;
+            }
+
+            &:nth-child(2),
+            &:nth-child(4) {
+                p {
+                    color: rgba($color: $white, $alpha: 0.5);
+                }
+            }
+        }
+    }
+}
+
+.footer_sub_text {
+    .medSmallP {
+        margin-bottom: 16px;
+    }
+
+    .regSmallP {
+        opacity: 0.8;
+    }
+}
+
+footer .ico_btn {
+    width: fit-content;
+    background-color: rgba($color: $black, $alpha: 0.3);
+    @include transition02;
+    padding: 6px 18px 6px 17px;
+
+    &:hover {
+        background-color: rgba($color: $black, $alpha: 0.4);
+    }
+
+    p span {
+        font-weight: 400;
+    }
+}
+
+@include web {
+    footer {
+        .ico_btn {
+            position: absolute;
+            top: 50px;
+            left: calc(50% + 512px);
+            transform: translateX(-100%);
+        }
+    }
+
+    .header_wrap_mobile{
+        display: none;
+    }
+}
+
+@include mobile {
+    //header
+    header {
+        padding: 12px 20px;
+        background-color: $white;
+    
+        &.transparent {
+            background-color: transparent;
+        }
+    }
+
+    .header_wrap_pc{
+        display: none;
+    }
+
+    .header_wrap_mobile{
+        @include flex_between_center;
+    }
+
+    footer {
+        padding: 80px 20px;
+    }
+
+    .footer_wrap {
+        flex-direction: column;
+        margin-bottom: 20px;
+
+        .logo_wrap {
+            margin-bottom: 20px;
+        }
+    }
+
+    .footer_wrap .top_menu>li {
+        padding-right: 12px;
+    }
+
+    .footer_sub_text {
+        margin-bottom: 20px;
+
+        p {
+            font-size: 12px;
+        }
+    }
+
+    footer {
+        .ico_btn {
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+//index
+section {
+    width: 100%;
+    height: 50vh;
+    background-image: url(/assets/images/main_img_1.png);
+    @include bgCover;
+}

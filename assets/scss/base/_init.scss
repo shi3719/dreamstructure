@@ -1,0 +1,47 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "futura-pt", "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    word-break: keep-all;
+    word-wrap: break-word;
+    box-sizing: border-box;
+    white-space:nowrap;
+}
+
+
+$breakPoint: 1024px;
+
+@mixin mobile {
+    @media (max-width: #{$breakPoint - 1px}) {
+        @content;
+    }
+}
+
+@mixin web {
+    @media (min-width: $breakPoint) {
+        @content;
+    }
+}
+
+.web_none{
+    @include web{
+        display: none;
+    }
+}
+
+.mobile_none{
+    @include mobile{
+        display: none;
+    }
+}
+
+p::selection,
+li::selection,
+div::selection,
+br::selection {
+    background-color: black;
+    color: white;
+}

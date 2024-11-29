@@ -1,0 +1,541 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "futura-pt", "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  word-break: keep-all;
+  word-wrap: break-word;
+  box-sizing: border-box;
+  white-space: nowrap;
+}
+
+@media (min-width: 1024px) {
+  .web_none {
+    display: none;
+  }
+}
+
+@media (max-width: 1023px) {
+  .mobile_none {
+    display: none;
+  }
+}
+
+p::selection,
+li::selection,
+div::selection,
+br::selection {
+  background-color: black;
+  color: white;
+}
+
+.regCaption {
+  font-family: "SUIT", "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-size: 12px;
+  line-height: 185%;
+  font-weight: 400;
+}
+
+.regSmallP {
+  font-family: "SUIT", "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-size: 14px;
+  line-height: 185%;
+  font-weight: 400;
+}
+
+.regP {
+  font-family: "SUIT", "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-size: 16px;
+  line-height: 140%;
+  font-weight: 400;
+}
+
+.regbigP {
+  font-family: "SUIT", "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-size: 18px;
+  line-height: 140%;
+  font-weight: 400;
+}
+
+.medCaption {
+  font-family: "SUIT", "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-size: 12px;
+  line-height: 185%;
+  font-weight: 600;
+}
+
+.medSmallP {
+  font-family: "SUIT", "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-size: 14px;
+  line-height: 185%;
+  font-weight: 600;
+}
+
+.medbigP {
+  font-family: "SUIT", "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-size: 18px;
+  line-height: 140%;
+  font-weight: 600;
+}
+
+.medBigerP {
+  font-family: "SUIT", "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-size: 20px;
+  line-height: 140%;
+  font-weight: 600;
+}
+
+.boldCaption {
+  font-family: "SUIT", "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-size: 12px;
+  line-height: 185%;
+  font-weight: 700;
+}
+
+.boldSmallP {
+  font-family: "SUIT", "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-size: 14px;
+  line-height: 185%;
+  font-weight: 700;
+}
+
+.boldP {
+  font-family: "SUIT", "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-size: 16px;
+  line-height: 140%;
+  font-weight: 700;
+}
+
+.boldBigP {
+  font-family: "SUIT", "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-size: 18px;
+  line-height: 140%;
+  font-weight: 700;
+}
+
+.boldBigerP {
+  font-family: "SUIT", "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-size: 20px;
+  line-height: 140%;
+  font-weight: 700;
+}
+
+.center {
+  text-align: center;
+}
+
+.flex_between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex_between_center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex_start {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.flex_start_center {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.spacing_b_5 {
+  margin-bottom: 5px;
+}
+
+.spacing_b_10 {
+  margin-bottom: 10px;
+}
+
+.spacing_b_15 {
+  margin-bottom: 15px;
+}
+
+.spacing_b_20 {
+  margin-bottom: 20px;
+}
+
+.spacing_b_30 {
+  margin-bottom: 30px !important;
+}
+
+.spacing_b_40 {
+  margin-bottom: 40px;
+}
+
+.spacing_b_50 {
+  margin-bottom: 50px;
+}
+
+.spacing_b_70 {
+  margin-bottom: 70px;
+}
+
+.spacing_b_100 {
+  margin-bottom: 100px;
+}
+
+.spacing_t_10 {
+  margin-top: 10px;
+}
+
+.spacing_t_30 {
+  margin-top: 30px;
+}
+
+.spacing_t_50 {
+  margin-top: 50px;
+}
+
+.spacing_t_60 {
+  margin-top: 60px;
+}
+
+.spacing_t_100 {
+  margin-top: 100px;
+}
+
+.spacing_r_15 {
+  margin-right: 15px;
+}
+
+.people {
+  width: 24px;
+  height: 24px;
+  background-color: #FF4427;
+  content: "";
+  mask: url(/assets/images/people.svg) no-repeat center/contain;
+  -webkit-mask: url(/assets/images/people.svg) no-repeat center/contain;
+  cursor: pointer;
+}
+
+.download {
+  width: 24px;
+  height: 24px;
+  background-color: #FF4427;
+  content: "";
+  mask: url(/assets/images/download.svg) no-repeat center/contain;
+  -webkit-mask: url(/assets/images/download.svg) no-repeat center/contain;
+  cursor: pointer;
+}
+
+header {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+  padding: 0 calc((100% - 1024px) / 2);
+  background-color: #fff;
+}
+header.transparent {
+  background-color: transparent;
+}
+@media (min-width: 1024px) {
+  header.transparent:hover {
+    background-color: #fff;
+  }
+}
+
+@keyframes menuHeight {
+  from {
+    max-height: 0;
+  }
+  to {
+    max-height: 180px;
+  }
+}
+.header_wrap_pc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header_wrap_pc .logo_wrap {
+  width: 140px;
+  margin-right: 80px;
+  cursor: pointer;
+}
+.header_wrap_pc .logo_wrap img {
+  width: 100%;
+}
+.header_wrap_pc .top_menu {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.header_wrap_pc .top_menu > li {
+  width: 130px;
+  margin-right: 60px;
+  cursor: pointer;
+}
+.header_wrap_pc .top_menu > li p {
+  font-family: "SUIT", "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-size: 16px;
+  line-height: 140%;
+  font-weight: 700;
+  font-weight: 800;
+  transition: all 0.2s ease-in-out;
+  color: #333333;
+  padding: 30px 0;
+}
+.header_wrap_pc .top_menu > li:last-child {
+  margin-right: 0;
+}
+.header_wrap_pc .top_menu > li:hover p {
+  color: #FF4427;
+}
+.header_wrap_pc .top_menu > li:hover .header_sub {
+  animation-name: menuHeight;
+  opacity: 1;
+}
+.header_wrap_pc .ico_btn {
+  background-color: #F6F6F6;
+  transition: all 0.2s ease-in-out;
+}
+.header_wrap_pc .ico_btn:hover {
+  background-color: #F0F0F0;
+}
+.header_wrap_pc .menu_wrap {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.ico_btn {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  align-items: center;
+  padding: 6px 20px 6px 19px;
+  cursor: pointer;
+}
+.ico_btn > div:first-child {
+  margin-right: 9px;
+}
+.ico_btn P {
+  font-family: "SUIT", "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-size: 16px;
+  line-height: 140%;
+  font-weight: 700;
+}
+
+.header_sub {
+  transition: all 0.4s ease-in-out;
+  position: fixed;
+  top: 82px;
+  left: 0;
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  width: 100%;
+  padding: 0 calc((100% - 1024px) / 2);
+  background-color: rgba(255, 255, 255, 0.8);
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+}
+.header_sub ul {
+  padding: 21px 0;
+}
+.header_sub li {
+  font-family: "SUIT", "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-size: 14px;
+  line-height: 185%;
+  font-weight: 600;
+  transition: all 0.2s ease-in-out;
+  font-size: 15px;
+  color: #333333;
+  margin-bottom: 8px;
+}
+.header_sub li:last-child {
+  margin-bottom: 0;
+}
+.header_sub li:hover {
+  color: #FF4427;
+}
+.header_sub.header_sub_1 ul {
+  margin-left: 220px;
+}
+.header_sub.header_sub_2 ul {
+  margin-left: 410px;
+}
+.header_sub.header_sub_3 ul {
+  margin-left: 600px;
+}
+
+.header_wrap_mobile {
+  z-index: 100;
+}
+.header_wrap_mobile .button_container {
+  position: relative;
+  width: 35px;
+  height: 27px;
+  cursor: pointer;
+  transition: opacity 0.25s ease;
+}
+.header_wrap_mobile .button_container:hover {
+  opacity: 0.7;
+}
+.header_wrap_mobile .button_container.active .top {
+  transform: translateY(11px) translateX(0) rotate(45deg);
+  background: #FF4427;
+}
+.header_wrap_mobile .button_container.active .middle {
+  opacity: 0;
+  background: #FF4427;
+}
+.header_wrap_mobile .button_container.active .bottom {
+  transform: translateY(-11px) translateX(0) rotate(-45deg);
+  background: #FF4427;
+}
+.header_wrap_mobile .button_container span {
+  background: #FF4427;
+  border: none;
+  height: 5px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.35s ease;
+  cursor: pointer;
+}
+.header_wrap_mobile .button_container span:nth-of-type(2) {
+  top: 11px;
+}
+.header_wrap_mobile .button_container span:nth-of-type(3) {
+  top: 22px;
+}
+
+footer {
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+  padding: 50px calc((100% - 1024px) / 2);
+  padding-bottom: 80px;
+  background-color: #FF4427;
+  color: #fff;
+  position: relative;
+}
+
+.footer_wrap {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 40px;
+}
+.footer_wrap .logo_wrap {
+  width: 140px;
+  margin-right: 36px;
+  cursor: pointer;
+}
+.footer_wrap .logo_wrap img {
+  width: 100%;
+}
+.footer_wrap .top_menu {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.footer_wrap .top_menu > li {
+  padding-right: 20px;
+  cursor: pointer;
+}
+.footer_wrap .top_menu > li p {
+  font-family: "SUIT", "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-size: 16px;
+  line-height: 140%;
+  font-weight: 700;
+  font-size: 13px;
+  transition: all 0.2s ease-in-out;
+  color: rgba(255, 255, 255, 0.8);
+}
+.footer_wrap .top_menu > li:last-child {
+  padding-right: 0;
+}
+.footer_wrap .top_menu > li:nth-child(2) p, .footer_wrap .top_menu > li:nth-child(4) p {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.footer_sub_text .medSmallP {
+  margin-bottom: 16px;
+}
+.footer_sub_text .regSmallP {
+  opacity: 0.8;
+}
+
+footer .ico_btn {
+  width: fit-content;
+  background-color: rgba(51, 51, 51, 0.3);
+  transition: all 0.2s ease-in-out;
+  padding: 6px 18px 6px 17px;
+}
+footer .ico_btn:hover {
+  background-color: rgba(51, 51, 51, 0.4);
+}
+footer .ico_btn p span {
+  font-weight: 400;
+}
+
+@media (min-width: 1024px) {
+  footer .ico_btn {
+    position: absolute;
+    top: 50px;
+    left: calc(50% + 512px);
+    transform: translateX(-100%);
+  }
+  .header_wrap_mobile {
+    display: none;
+  }
+}
+@media (max-width: 1023px) {
+  header {
+    padding: 12px 20px;
+    background-color: #fff;
+  }
+  header.transparent {
+    background-color: transparent;
+  }
+  .header_wrap_pc {
+    display: none;
+  }
+  .header_wrap_mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  footer {
+    padding: 80px 20px;
+  }
+  .footer_wrap {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  .footer_wrap .logo_wrap {
+    margin-bottom: 20px;
+  }
+  .footer_wrap .top_menu > li {
+    padding-right: 12px;
+  }
+  .footer_sub_text {
+    margin-bottom: 20px;
+  }
+  .footer_sub_text p {
+    font-size: 12px;
+  }
+  footer .ico_btn p {
+    font-size: 14px;
+  }
+}
+section {
+  width: 100%;
+  height: 50vh;
+  background-image: url(/assets/images/main_img_1.png);
+  background-position: center;
+  background-size: cover;
+}

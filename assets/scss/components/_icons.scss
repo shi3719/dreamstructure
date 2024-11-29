@@ -1,0 +1,21 @@
+.people{
+    width: 24px;
+    height: 24px;
+    background-color: $primary;
+    content: '';
+    mask: url(/assets/images/people.svg) no-repeat center/contain;
+    -webkit-mask: url(/assets/images/people.svg) no-repeat center/contain;
+    
+    cursor: pointer;
+}
+
+.download{
+    width: 24px;
+    height: 24px;
+    background-color: $primary;
+    content: '';
+    mask: url(/assets/images/download.svg) no-repeat center/contain;
+    -webkit-mask: url(/assets/images/download.svg) no-repeat center/contain;
+    
+    cursor: pointer;
+}
