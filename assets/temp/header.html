@@ -52,7 +52,7 @@
     <div class="logo_wrap">
         <img src="/assets/images/logo_red.png" alt="">
     </div>
-    <div class="button_container" id="mobile_menu_open">
+    <div class="button_container mobile_menu_open">
         <span class="top"></span>
         <span class="middle"></span>
         <span class="bottom"></span>
@@ -60,17 +60,72 @@
 </div>
 
 <div class="mobile_menu_popup">
-
+    <div>
+        <div>
+            <div class="mobile_menu_btn_wrap">
+                <div onclick="location.href='/'" class="btn ico_btn">
+                    <div class="people"></div>
+                    <p>상시채용</p>
+                </div>
+                <div onclick="location.href='/'" class="btn ico_btn">
+                    <div class="download"></div>
+                    <p>회사소개서</p>
+                </div>
+            </div>
+            <ul class="mobile_menu_wrap">
+                <li class="off">
+                    <div>
+                        <p>BUSINESS PART</p>
+                        <div class="arrow_down sub_menu_btn"></div>
+                    </div>
+                    <ul>
+                        <li>구조설계</li>
+                        <li>안전진단</li>
+                        <li>기타 업무</li>
+                    </ul>
+                </li>
+                <li class="off">
+                    <div>
+                        <p>PERFORMANCE</p>
+                        <div class="arrow_down sub_menu_btn"></div>
+                    </div>
+                    <ul>
+                        <li>구조설계</li>
+                        <li>안전진단</li>
+                    </ul>
+                </li>
+                <li class="off">
+                    <div>
+                        <p>ABOUT US</p>
+                        <div class="arrow_down sub_menu_btn"></div>
+                    </div>
+                    <ul>
+                        <li>연혁</li>
+                        <li>인증서</li>
+                        <li>오시는 길</li>
+                        <li>채용</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    
+        <div>
+            <div class="footer_wrap">
+                <ul class="top_menu">
+                    <li><p>HISTORY</p></li>
+                    <li><p>ㅣ</p></li>
+                    <li><p>CONTACT</p></li>
+                    <li><p>ㅣ</p></li>
+                    <li><p>RECRUIT</p></li>
+                </ul>
+            </div>
+            <div class="footer_sub_text">
+                <p class="medSmallP">
+                    서울특별시 성동구 왕십리로 410, J동 5층 (하왕십리동, 센트라스)
+                    <br>J5,410, Wangsimni-ro, Seongdong-gu, Seoul, Korea
+                </p>
+                <p class="regSmallP">Copyright © 2024 (주)드림구조. All Right Reserved </p>
+            </div>
+        </div>
+    </div>
 </div>
-
-<script>
-    // 햄버거 메뉴 조절
-    const mobileMenuOpenBtn = document.querySelector('#mobile_menu_open');
-    const mobileMenuPopup = document.querySelector('.mobile_menu_popup');
-
-    mobileMenuOpenBtn.addEventListener('click', () => {
-        console.log('test')
-        mobileMenuOpenBtn.classList.add('active');
-        mobileMenuPopup.classList.add('on');
-    })
-</script>

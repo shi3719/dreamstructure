@@ -19,3 +19,36 @@
     
     cursor: pointer;
 }
+
+.arrow_down{
+    width: 21px;
+    height: 21px;
+    background-color: $darkGray;
+    content: '';
+    mask: url(/assets/images/arrow_down.svg) no-repeat center/contain;
+    -webkit-mask: url(/assets/images/arrow_down.svg) no-repeat center/contain;
+    
+    cursor: pointer;
+}
+
+.arrow_left{
+    width: 16px;
+    height: 16px;
+    background-color: $black;
+    content: '';
+    mask: url(/assets/images/arrow_left.svg) no-repeat center/contain;
+    -webkit-mask: url(/assets/images/arrow_left.svg) no-repeat center/contain;
+    
+    cursor: pointer;
+}
+
+.arrow_right{
+    width: 16px;
+    height: 16px;
+    background-color: $black;
+    content: '';
+    mask: url(/assets/images/arrow_right.svg) no-repeat center/contain;
+    -webkit-mask: url(/assets/images/arrow_right.svg) no-repeat center/contain;
+    
+    cursor: pointer;
+}

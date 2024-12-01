@@ -32,6 +32,17 @@ header {
     }
 }
 
+
+@keyframes menuHeightOff {
+    from {
+        max-height: 180px;
+    }
+
+    to {
+        max-height: 0;
+    }
+}
+
 .header_wrap_pc {
     @include flex_between_center;
 
@@ -160,11 +171,26 @@ header {
 
 // header_mobile
 .header_wrap_mobile {
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 12px 20px;
+    @include flex_between_center;
     z-index: 100;
+
+    .logo_wrap{
+        width: 120px;
+        img{
+            width: 100%;
+        }
+    }
+
     .button_container {
         position: relative;
-        width: 35px;
-        height: 27px;
+        width: 23px;
+        height: 19px;
         cursor: pointer;
         transition: opacity .25s ease;
 
@@ -174,7 +200,7 @@ header {
 
         &.active {
             .top {
-                transform: translateY(11px) translateX(0) rotate(45deg);
+                transform: translateY(5px) translateX(0) rotate(45deg);
                 background: $primary;
             }
 
@@ -192,7 +218,7 @@ header {
         span {
             background: $primary;
             border: none;
-            height: 5px;
+            height: 2px;
             width: 100%;
             position: absolute;
             top: 0;
@@ -201,15 +227,129 @@ header {
             cursor: pointer;
 
             &:nth-of-type(2) {
-                top: 11px;
+                top: 8px;
             }
 
             &:nth-of-type(3) {
-                top: 22px;
+                top: 16px;
             }
         }
     }
 
+}
+
+.mobile_menu_popup{
+    position: fixed;
+    z-index: 50;
+    top: 0;
+    left: 0;
+    padding: 80px 20px 50px 20px;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba($color: $white, $alpha: 0.9);
+    overflow: scroll;
+    display: none;
+    opacity: 0;
+    @include transition04;
+
+    &.on{
+        display: block;
+        opacity: 1;
+    }
+
+    >div{
+        min-height: calc(100vh - 130px);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .footer_wrap{
+        margin-top: 50px;
+    }
+
+    .footer_wrap .top_menu > li p{
+        color: $black
+    }
+}
+
+.mobile_menu_btn_wrap{
+    @include flex_between_center;
+    margin-bottom: 36px;
+    
+    .ico_btn{
+        width: calc(50% - 6px);
+        justify-content: center;
+        padding: 9px 20px 9px 19px;
+
+        &:first-child{
+            border: 1px solid $lightGray;
+        }
+
+        &:nth-child(2){
+            background-color: $black;
+            p{
+                color: $white;
+            }
+        }
+    }
+}
+
+.mobile_menu_wrap{
+    >li{
+        >div:first-child{
+            @include flex_between_center;
+            padding: 12px 12px 12px 0;
+            border-bottom: 1px solid $lightGray;
+
+            p{
+                color: $black;
+                @include boldP;
+                font-size: 19px;
+                font-weight: 800;
+            }
+        }
+
+        ul{
+            @include flex_start;
+            flex-wrap: wrap;
+
+            max-height: 0;
+            opacity: 0;
+
+            @include transition04;
+            animation-duration: .4s;
+            animation-fill-mode: forwards;
+
+            >li{
+                width: 50%;
+                @include medP;
+                color: $darkGray;
+                margin-top: 20px;
+
+                &:last-child{
+                    margin-bottom: 30px;
+                }
+            }
+        }
+
+        &.on{
+            ul{
+                animation-name: menuHeight;
+                opacity: 1;
+            }
+
+            .arrow_down{
+                transform: rotate(180deg)
+            }
+        }
+
+        &.off{
+            ul{
+                animation-name: menuHeightOff;
+            }
+        }
+    }
 }
 
 // footer
@@ -361,9 +501,7 @@ footer .ico_btn {
 }
 
 //index
-section {
+.main_swiper_wrap {
     width: 100%;
-    height: 50vh;
-    background-image: url(/assets/images/main_img_1.png);
-    @include bgCover;
+    height: 80vw;
 }

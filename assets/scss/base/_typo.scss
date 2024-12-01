@@ -60,6 +60,17 @@
     @include medSmallP;
 }
 
+@mixin medP {
+    font-family: "SUIT", "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    font-size: 16px;
+    line-height: 180%;
+    font-weight: 600;
+}
+.medP{
+    @include medP;
+}
+
+
 @mixin medbigP {
     font-family: "SUIT", "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     font-size: 18px;
@@ -132,6 +143,14 @@
     @include boldBigerP;
 }
 
+@mixin GoodTimesRg{
+    font-family: "GoodTimesRg", "SUIT", "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    line-height: 140%;
+    font-weight: 700;
+}
+.GoodTimesRg{
+    @include GoodTimesRg;
+}
 
 .center{
     text-align: center;
