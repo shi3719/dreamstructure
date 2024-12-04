@@ -18,7 +18,7 @@
     <link rel="apple-touch-icon" href="/apple_touch_icon.png">
     <link rel="icon" type="image/png" href="/favicon.ico">
 
-    <meta property="og:title" content="드림구조" />
+    <meta property="og:title" content="애프터눈바이브런시(ANV)" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://anvlink.vercel.app/" />
     <meta property="og:image" content="https://anvlink.vercel.app/assets/images/ogimage.png" />
@@ -67,63 +67,9 @@
     </section>
 
     <footer id="footer"></footer>
-
-    <script src="/assets/js/index.js"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-        const swiperButtonNext = document.querySelector('.swiper-button-next');
-        const swiperButtonPrev = document.querySelector('.swiper-button-prev');
     
-        const mainSwiper = new Swiper('.main_swiper_container', {
-            speed: 500,
-            loop: true,
-            autoplay: true,
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-            on: {
-                activeIndexChange: function () {
-                    if(this.realIndex === 1 || this.realIndex === 2){
-                        header.classList.add('blackBg');
-                        swiperButtonNext.classList.add('blackBg');
-                        swiperButtonPrev.classList.add('blackBg');
-                    }else{
-                        header.classList.remove('blackBg');
-                        swiperButtonNext.classList.remove('blackBg');
-                        swiperButtonPrev.classList.remove('blackBg');
-                    }
-
-                    console.log(this.realIndex);
-
-                    if(this.realIndex === 0){
-                        swiperButtonNext.classList.add('num0');
-                        swiperButtonPrev.classList.add('num0');
-                        swiperButtonNext.classList.remove('num1');
-                        swiperButtonPrev.classList.remove('num1');
-                        swiperButtonNext.classList.remove('num2');
-                        swiperButtonPrev.classList.remove('num2');
-                    }else if(this.realIndex === 1){
-                        swiperButtonNext.classList.remove('num0');
-                        swiperButtonPrev.classList.remove('num0');
-                        swiperButtonNext.classList.add('num1');
-                        swiperButtonPrev.classList.add('num1');
-                        swiperButtonNext.classList.remove('num2');
-                        swiperButtonPrev.classList.remove('num2');
-                    }else if(this.realIndex === 2){
-                        swiperButtonNext.classList.remove('num0');
-                        swiperButtonPrev.classList.remove('num0');
-                        swiperButtonNext.classList.remove('num1');
-                        swiperButtonPrev.classList.remove('num1');
-                        swiperButtonNext.classList.add('num2');
-                        swiperButtonPrev.classList.add('num2');
-                    }
-                }
-            }
-        });
-        
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/assets/js/index.js"></script>
 </body>
 
 </html>
