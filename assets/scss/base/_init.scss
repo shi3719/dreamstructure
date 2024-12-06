@@ -45,3 +45,16 @@ br::selection {
     background-color: black;
     color: white;
 }
+
+.inner_section{
+    max-width: 1024px;
+    margin: 0 auto;
+
+    @include mobile{
+        max-width: calc(100% - 40px);
+
+        &.mobile_full{
+            max-width: 100%;
+        }
+    }
+}

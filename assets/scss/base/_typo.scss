@@ -143,6 +143,17 @@
     @include boldBigerP;
 }
 
+@mixin boldBiggest {
+    font-family: "SUIT", "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    font-size: 42px;
+    line-height: 140%;
+    font-weight: 700;
+}
+
+.boldBiggest{
+    @include boldBiggest;
+}
+
 @mixin GoodTimesRg{
     font-family: "GoodTimesRg", "SUIT", "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     line-height: 140%;

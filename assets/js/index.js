@@ -36,8 +36,8 @@ const afterHeaderLoad = () => {
     const subMenuBtns = document.querySelectorAll('.sub_menu_btn');
     subMenuBtns.forEach(subMenuBtn => {
         subMenuBtn.addEventListener('click', () => {
-            subMenuBtn.parentNode.parentNode.classList.toggle('on');
-            subMenuBtn.parentNode.parentNode.classList.toggle('off');
+            subMenuBtn.parentNode.classList.toggle('on');
+            subMenuBtn.parentNode.classList.toggle('off');
         })
     })
 }

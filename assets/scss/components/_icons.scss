@@ -31,6 +31,17 @@
     cursor: pointer;
 }
 
+.x{
+    width: 21px;
+    height: 21px;
+    background-color: $darkGray;
+    content: '';
+    mask: url(/assets/images/x.svg) no-repeat center/contain;
+    -webkit-mask: url(/assets/images/x.svg) no-repeat center/contain;
+    
+    cursor: pointer;
+}
+
 .arrow_left{
     width: 16px;
     height: 16px;
@@ -49,6 +60,53 @@
     content: '';
     mask: url(/assets/images/arrow_right.svg) no-repeat center/contain;
     -webkit-mask: url(/assets/images/arrow_right.svg) no-repeat center/contain;
+    
+    cursor: pointer;
+}
+
+.address{
+    width: 24px;
+    height: 24px;
+    background-color: $primary;
+    content: '';
+    mask: url(/assets/images/address.svg) no-repeat center/contain;
+    -webkit-mask: url(/assets/images/address.svg) no-repeat center/contain;
+}
+
+.phone{
+    width: 24px;
+    height: 24px;
+    background-color: $primary;
+    content: '';
+    mask: url(/assets/images/phone.svg) no-repeat center/contain;
+    -webkit-mask: url(/assets/images/phone.svg) no-repeat center/contain;
+}
+
+.fax{
+    width: 24px;
+    height: 24px;
+    background-color: $primary;
+    content: '';
+    mask: url(/assets/images/fax.svg) no-repeat center/contain;
+    -webkit-mask: url(/assets/images/fax.svg) no-repeat center/contain;
+}
+
+.email{
+    width: 24px;
+    height: 24px;
+    background-color: $primary;
+    content: '';
+    mask: url(/assets/images/email.svg) no-repeat center/contain;
+    -webkit-mask: url(/assets/images/email.svg) no-repeat center/contain;
+}
+
+.copy{
+    width: 21px;
+    height: 21px;
+    background-color: $middleGray;
+    content: '';
+    mask: url(/assets/images/copy.svg) no-repeat center/contain;
+    -webkit-mask: url(/assets/images/copy.svg) no-repeat center/contain;
     
     cursor: pointer;
 }
