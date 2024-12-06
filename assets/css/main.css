@@ -814,7 +814,7 @@ footer .ico_btn p span {
 }
 .main_swiper_wrap {
   width: 100%;
-  height: 56.25vw;
+  height: 50vw;
   min-height: calc(100vh - 304px);
   overflow: hidden;
   position: relative;
