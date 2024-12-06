@@ -1658,34 +1658,3 @@ footer .ico_btn p span {
   z-index: 190;
   cursor: pointer;
 }
-
-.main_swiper_wrap {
-  width: 100%;
-  height: 56.25vw;
-}
-.main_swiper_wrap .main_swiper_container {
-  height: 100%;
-}
-
-.main_swiper_slide {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  background-position: center;
-  background-size: cover;
-}
-.main_swiper_slide > div {
-  width: 1024px;
-  position: absolute;
-  margin: 0 auto;
-}
-.main_swiper_slide .GoodTimesRg {
-  font-size: 5vw;
-  color: #FF4427;
-}
-.main_swiper_slide .GoodTimesRg span {
-  color: #333333;
-  font-family: "GoodTimesRg", "SUIT", "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  line-height: 140%;
-  font-weight: 700;
-}
