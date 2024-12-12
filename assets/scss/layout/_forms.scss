@@ -1140,6 +1140,10 @@ footer .ico_btn {
 .map_wrap{
     .map{
         height: 310px;
+
+        @include mobile{
+            height: 250px;
+        }
     }
 
     @include web{

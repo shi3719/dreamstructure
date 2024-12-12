@@ -1410,6 +1410,11 @@ footer .ico_btn p span {
 .map_wrap .map {
   height: 310px;
 }
+@media (max-width: 1023px) {
+  .map_wrap .map {
+    height: 250px;
+  }
+}
 @media (min-width: 1024px) {
   .map_wrap {
     display: flex;
