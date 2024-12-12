@@ -21,12 +21,12 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
-    <script src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=c319dc4cb87b8b9b0ffeaa59873db378"></script>
-
     <meta property="og:title" content="드림구조" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://dreamstructure.vercel.app/" />
     <meta property="og:image" content="https://dreamstructure.vercel.app/assets/images/ogimage.png" />
+
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=c319dc4cb87b8b9b0ffeaa59873db378"></script>
 </head>
 
 <body>
@@ -557,25 +557,30 @@
             })
         })
 
+        
+    </script>
+
+    <script>
         function initMap() {
-            const container = document.getElementById('map'); // Map container
+            const container = document.getElementById('map'); // 맵을 표시할 컨테이너
             const options = {
-                center: new kakao.maps.LatLng(37.5642135, 127.0016985), // Replace with actual coordinates
-                level: 3 // Zoom level
+            center: new kakao.maps.LatLng(37.5642135, 127.0016985), // 중심 좌표
+            level: 3 // 확대 레벨
             };
 
             const map = new kakao.maps.Map(container, options);
 
-            // Add a marker
-            const markerPosition = new kakao.maps.LatLng(37.5642135, 127.0016985); // Replace with actual coordinates
+            // 마커 설정
+            const markerPosition = new kakao.maps.LatLng(37.5642135, 127.0016985); // 마커 위치
             const marker = new kakao.maps.Marker({
-                position: markerPosition
+            position: markerPosition
             });
-            
+
             marker.setMap(map);
         }
-        
-        window.onload = initMap;
+
+        // 페이지가 로드된 후 맵 초기화
+        document.addEventListener("DOMContentLoaded", initMap);
     </script>
 </body>
 
