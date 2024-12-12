@@ -562,25 +562,30 @@
 
     <script>
         function initMap() {
-            const container = document.getElementById('map'); // 맵을 표시할 컨테이너
+            const container = document.getElementById('map');
             const options = {
-            center: new kakao.maps.LatLng(37.5642135, 127.0016985), // 중심 좌표
-            level: 3 // 확대 레벨
+                center: new kakao.maps.LatLng(37.565329627481596, 127.0250327258859),
+                level: 3
             };
 
             const map = new kakao.maps.Map(container, options);
 
-            // 마커 설정
-            const markerPosition = new kakao.maps.LatLng(37.5642135, 127.0016985); // 마커 위치
+            const markerPosition = new kakao.maps.LatLng(37.565329627481596, 127.0250327258859);
             const marker = new kakao.maps.Marker({
-            position: markerPosition
+                position: markerPosition
             });
 
             marker.setMap(map);
+
+            // 강제로 리사이즈 처리
+            setTimeout(() => {
+                map.relayout();
+            }, 0);
         }
 
-        // 페이지가 로드된 후 맵 초기화
-        document.addEventListener("DOMContentLoaded", initMap);
+        window.onload = function () {
+            initMap();
+        };
     </script>
 </body>
 
