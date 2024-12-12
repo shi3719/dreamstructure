@@ -21,6 +21,8 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
+    <script src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=c319dc4cb87b8b9b0ffeaa59873db378"></script>
+
     <meta property="og:title" content="드림구조" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://dreamstructure.vercel.app/" />
@@ -74,7 +76,9 @@
                         <p class="year">2022</p>
                         <div class="dot"></div>
                         <ul>
-                            <li>평택사무실 개설 / ISO 45001 취득/ 위험성평가 인정</li>
+                            <li>평택사무실 개설</li>
+                            <li>ISO 45001 취득</li>
+                            <li>위험성평가 인정</li>
                             <li>중소벤처기업부 중소기업기술개발지원사업 <br>R&D 사업 수주</li>
                             <li>Amkor 베트남, 필리핀 프로젝트 구조설계</li>
                         </ul>
@@ -154,7 +158,7 @@
                         <p class="year">2013</p>
                         <div class="dot"></div>
                         <ul>
-                            <li>삼성전자 베트남 옌빈단지 핸드폰공장 구조설계</li>
+                            <li>삼성전자 베트남 옌빈단지 휴대폰공장 구조설계</li>
                         </ul>
                     </li>
                     <li class="history_item">
@@ -185,7 +189,7 @@
                         <p class="year">2010</p>
                         <div class="dot"></div>
                         <ul>
-                            <li>삼성전자 베트남 옌폰단지 핸드폰공장 구조설계</li>
+                            <li>삼성전자 베트남 옌퐁단지 휴대폰공장 구조설계</li>
                             <li>삼성디스플레이 중국 쑤저우 단지 구조설계</li>
                         </ul>
                     </li>
@@ -213,8 +217,6 @@
                         <div class="dot"></div>
                         <ul>
                             <li>09.02 드림구조 설립</li>
-                            <li>삼성반도체 구조설계 시작</li>
-                            <li>삼성디스플레이 구조설계 시작</li>
                         </ul>
                     </li>
                     <li class="line line100 mobile_none"></li>
@@ -544,21 +546,6 @@
             })
         })
 
-        document.addEventListener('DOMContentLoaded', () => {
-            // Initialize the map
-            const map = L.map('map').setView([37.5665, 127.0358], 16); // Center on 410 Wangsimni-ro
-
-            // Add OpenStreetMap tiles
-            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-            }).addTo(map);
-
-            // Add a marker at the address
-            L.marker([37.5665, 127.0358]).addTo(map)
-                .bindPopup('<b>410 Wangsimni-ro</b><br>Seongdong-gu, Seoul.')
-                .openPopup();
-        });
-
         const copyBtns = document.querySelectorAll('.copy_btn');
         copyBtns.forEach((copyBtn) => {
             copyBtn.addEventListener('click', () => {
@@ -569,6 +556,26 @@
                 }, "1500");
             })
         })
+
+        function initMap() {
+            const container = document.getElementById('map'); // Map container
+            const options = {
+                center: new kakao.maps.LatLng(37.5642135, 127.0016985), // Replace with actual coordinates
+                level: 3 // Zoom level
+            };
+
+            const map = new kakao.maps.Map(container, options);
+
+            // Add a marker
+            const markerPosition = new kakao.maps.LatLng(37.5642135, 127.0016985); // Replace with actual coordinates
+            const marker = new kakao.maps.Marker({
+                position: markerPosition
+            });
+            
+            marker.setMap(map);
+        }
+        
+        window.onload = initMap;
     </script>
 </body>
 

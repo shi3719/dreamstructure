@@ -386,8 +386,8 @@ footer {
     @include transition02;
 
     width: 100%;
-    padding: 50px calc((100% - 1024px) / 2);
-    padding-bottom: 80px;
+    padding: 40px calc((100% - 1024px) / 2);
+    padding-bottom: 50px;
     background-color: $primary;
     color: $white;
 
@@ -396,7 +396,7 @@ footer {
 
 .footer_wrap {
     @include flex_start;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 
     .logo_wrap {
         width: 140px;
@@ -438,7 +438,7 @@ footer {
 
 .footer_sub_text {
     .medSmallP {
-        margin-bottom: 16px;
+        margin-bottom: 10px;
     }
 
     .regSmallP {
@@ -1030,6 +1030,8 @@ footer .ico_btn {
     }
 
     >ul{
+        width: 100%;
+
         @include web{
             width: calc(50% - 32px);
         }
@@ -1060,19 +1062,7 @@ footer .ico_btn {
             }
 
             @include mobile{
-                left: 61px;
-
-                &.line1{
-                    height: 511px;
-                }
-
-                &.line2{
-                    height: 400px;
-                }
-
-                &.line3{
-                    height: 345px;
-                }
+                opacity: 0;
             }
         }
     }
@@ -1333,17 +1323,15 @@ footer .ico_btn {
     }
 
     .whiteBg{
-        position: relative;
-        width: calc(100% - 250px);
+        width: calc(75vh - 180px);
         height: calc(100% - 250px);
-        margin: 125px;
         background-color: $white;
         z-index: 200;
+        @include fix_center;
 
         @include mobile{
             width: calc(100% - 40px);
-            height: calc(100% - 80px);
-            margin: 40px 20px;
+            height: calc(100% - 120px);
         }
     }
 
@@ -1355,12 +1343,13 @@ footer .ico_btn {
     }
 
     .bg_cover_wrap{
-        padding: 40px;
+        padding: 20px;
         width: 100%;
         height: calc(100% - 42px);
 
         @include mobile{
-            padding: 16px;
+            padding: 0;
+            padding-top: 10px;
             height: calc(100% - 32px);
         }
         

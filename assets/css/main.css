@@ -1,5 +1,5 @@
 .primary {
-  color: #FF4427;
+  color: #D93920;
 }
 
 @font-face {
@@ -255,7 +255,7 @@ br::selection {
 .people {
   width: 24px;
   height: 24px;
-  background-color: #FF4427;
+  background-color: #D93920;
   content: "";
   mask: url(/assets/images/people.svg) no-repeat center/contain;
   -webkit-mask: url(/assets/images/people.svg) no-repeat center/contain;
@@ -265,7 +265,7 @@ br::selection {
 .download {
   width: 24px;
   height: 24px;
-  background-color: #FF4427;
+  background-color: #D93920;
   content: "";
   mask: url(/assets/images/download.svg) no-repeat center/contain;
   -webkit-mask: url(/assets/images/download.svg) no-repeat center/contain;
@@ -315,7 +315,7 @@ br::selection {
 .address {
   width: 24px;
   height: 24px;
-  background-color: #FF4427;
+  background-color: #D93920;
   content: "";
   mask: url(/assets/images/address.svg) no-repeat center/contain;
   -webkit-mask: url(/assets/images/address.svg) no-repeat center/contain;
@@ -324,7 +324,7 @@ br::selection {
 .phone {
   width: 24px;
   height: 24px;
-  background-color: #FF4427;
+  background-color: #D93920;
   content: "";
   mask: url(/assets/images/phone.svg) no-repeat center/contain;
   -webkit-mask: url(/assets/images/phone.svg) no-repeat center/contain;
@@ -333,7 +333,7 @@ br::selection {
 .fax {
   width: 24px;
   height: 24px;
-  background-color: #FF4427;
+  background-color: #D93920;
   content: "";
   mask: url(/assets/images/fax.svg) no-repeat center/contain;
   -webkit-mask: url(/assets/images/fax.svg) no-repeat center/contain;
@@ -342,7 +342,7 @@ br::selection {
 .email {
   width: 24px;
   height: 24px;
-  background-color: #FF4427;
+  background-color: #D93920;
   content: "";
   mask: url(/assets/images/email.svg) no-repeat center/contain;
   -webkit-mask: url(/assets/images/email.svg) no-repeat center/contain;
@@ -444,7 +444,7 @@ header.blackBg .header_wrap_pc .top_menu > li p {
   margin-right: 0;
 }
 .header_wrap_pc .top_menu > li:hover p {
-  color: #FF4427 !important;
+  color: #D93920 !important;
 }
 .header_wrap_pc .top_menu > li:hover .header_sub {
   animation-name: menuHeight;
@@ -512,7 +512,7 @@ header.blackBg .header_wrap_pc .top_menu > li p {
   margin-bottom: 0;
 }
 .header_sub li:hover {
-  color: #FF4427;
+  color: #D93920;
 }
 .header_sub.header_sub_1 ul {
   margin-left: 220px;
@@ -555,18 +555,18 @@ header.blackBg .header_wrap_pc .top_menu > li p {
 }
 .header_wrap_mobile .button_container.active .top {
   transform: translateY(5px) translateX(0) rotate(45deg);
-  background: #FF4427;
+  background: #D93920;
 }
 .header_wrap_mobile .button_container.active .middle {
   opacity: 0;
-  background: #FF4427;
+  background: #D93920;
 }
 .header_wrap_mobile .button_container.active .bottom {
   transform: translateY(-11px) translateX(0) rotate(-45deg);
-  background: #FF4427;
+  background: #D93920;
 }
 .header_wrap_mobile .button_container span {
-  background: #FF4427;
+  background: #D93920;
   border: none;
   height: 2px;
   width: 100%;
@@ -697,9 +697,9 @@ header.blackBg .header_wrap_pc .top_menu > li p {
 footer {
   transition: all 0.2s ease-in-out;
   width: 100%;
-  padding: 50px calc((100% - 1024px) / 2);
-  padding-bottom: 80px;
-  background-color: #FF4427;
+  padding: 40px calc((100% - 1024px) / 2);
+  padding-bottom: 50px;
+  background-color: #D93920;
   color: #fff;
   position: relative;
 }
@@ -707,7 +707,7 @@ footer {
 .footer_wrap {
   display: flex;
   justify-content: flex-start;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 .footer_wrap .logo_wrap {
   width: 140px;
@@ -743,7 +743,7 @@ footer {
 }
 
 .footer_sub_text .medSmallP {
-  margin-bottom: 16px;
+  margin-bottom: 10px;
 }
 .footer_sub_text .regSmallP {
   opacity: 0.8;
@@ -930,7 +930,7 @@ footer .ico_btn p span {
 }
 .main_swiper_slide .GoodTimesRg {
   font-size: 5vw;
-  color: #FF4427;
+  color: #D93920;
   margin-bottom: 20px;
 }
 @media (max-width: 1023px) {
@@ -1012,8 +1012,8 @@ footer .ico_btn p span {
 }
 .sub_tab_button_wrap li.on {
   color: #fff;
-  border: 1px solid #FF4427;
-  background-color: #FF4427;
+  border: 1px solid #D93920;
+  background-color: #D93920;
 }
 @media (max-width: 1023px) {
   .sub_tab_button_wrap li {
@@ -1042,7 +1042,7 @@ footer .ico_btn p span {
   line-height: 180%;
 }
 .sub_title_text .regP .highlight {
-  color: #FF4427;
+  color: #D93920;
   font-weight: 700;
 }
 @media (max-width: 1023px) {
@@ -1114,7 +1114,7 @@ footer .ico_btn p span {
 }
 .title_ico .boldP {
   margin-top: 25px;
-  color: #FF4427;
+  color: #D93920;
   text-transform: uppercase;
 }
 
@@ -1283,7 +1283,7 @@ footer .ico_btn p span {
   color: #646464;
 }
 .gallery_filter_wrap > li.on {
-  color: #FF4427;
+  color: #D93920;
 }
 
 .history_item_wrap {
@@ -1301,6 +1301,7 @@ footer .ico_btn p span {
   }
 }
 .history_item_wrap > ul {
+  width: 100%;
   position: relative;
 }
 @media (min-width: 1024px) {
@@ -1310,7 +1311,7 @@ footer .ico_btn p span {
 }
 .history_item_wrap > ul > li.line {
   position: absolute;
-  border-right: 2px solid #FF4427;
+  border-right: 2px solid #D93920;
   left: 80px;
   top: 6px;
   height: 100px;
@@ -1329,16 +1330,7 @@ footer .ico_btn p span {
 }
 @media (max-width: 1023px) {
   .history_item_wrap > ul > li.line {
-    left: 61px;
-  }
-  .history_item_wrap > ul > li.line.line1 {
-    height: 511px;
-  }
-  .history_item_wrap > ul > li.line.line2 {
-    height: 400px;
-  }
-  .history_item_wrap > ul > li.line.line3 {
-    height: 345px;
+    opacity: 0;
   }
 }
 
@@ -1357,7 +1349,7 @@ footer .ico_btn p span {
   font-size: 18px;
   line-height: 140%;
   font-weight: 700;
-  color: #FF4427;
+  color: #D93920;
   width: 50px;
 }
 @media (max-width: 1023px) {
@@ -1592,18 +1584,19 @@ footer .ico_btn p span {
   display: block;
 }
 .popup .whiteBg {
-  position: relative;
-  width: calc(100% - 250px);
+  width: calc(75vh - 180px);
   height: calc(100% - 250px);
-  margin: 125px;
   background-color: #fff;
   z-index: 200;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 @media (max-width: 1023px) {
   .popup .whiteBg {
     width: calc(100% - 40px);
-    height: calc(100% - 80px);
-    margin: 40px 20px;
+    height: calc(100% - 120px);
   }
 }
 .popup .x {
@@ -1613,13 +1606,14 @@ footer .ico_btn p span {
   right: 20px;
 }
 .popup .bg_cover_wrap {
-  padding: 40px;
+  padding: 20px;
   width: 100%;
   height: calc(100% - 42px);
 }
 @media (max-width: 1023px) {
   .popup .bg_cover_wrap {
-    padding: 16px;
+    padding: 0;
+    padding-top: 10px;
     height: calc(100% - 32px);
   }
 }
