@@ -479,6 +479,34 @@
     <script src="/assets/js/index.js"></script>
 
     <script>
+        function initMap() {
+            const container = document.getElementById('map');
+            const options = {
+                center: new kakao.maps.LatLng(37.56523242539498, 127.02453013793968),
+                level: 4
+            };
+
+            const map = new kakao.maps.Map(container, options);
+
+            const markerPosition = new kakao.maps.LatLng(37.56523242539498, 127.02453013793968);
+            const marker = new kakao.maps.Marker({
+                position: markerPosition
+            });
+
+            marker.setMap(map);
+
+            // 강제로 리사이즈 처리
+            setTimeout(() => {
+                map.relayout();
+            }, 0);
+        }
+
+        window.onload = function () {
+            initMap();
+        };
+    </script>
+
+    <script>
         const subTabButtons = document.querySelectorAll('.sub_tab_button');
         const subTabs = document.querySelectorAll('.sub_tab');
         
@@ -493,6 +521,14 @@
 
             document.querySelector(`.sub_tab_button_${num}`).classList.add('on');
             document.querySelector(`.sub_tab_${num}`).classList.add('on');
+            
+            if(num == 3){
+                initMap();
+            }
+
+            const url = new URL(window.location.href);
+            url.searchParams.set('num', num); 
+            window.history.replaceState(null, '', url); 
         }
 
         const checkTab = () => {            
@@ -512,7 +548,7 @@
             })
         })
         }
-    
+
         // Execute on page load
         document.addEventListener('DOMContentLoaded', () => {
             checkTab();
@@ -558,34 +594,6 @@
         })
 
         
-    </script>
-
-    <script>
-        function initMap() {
-            const container = document.getElementById('map');
-            const options = {
-                center: new kakao.maps.LatLng(37.565329627481596, 127.0250327258859),
-                level: 4
-            };
-
-            const map = new kakao.maps.Map(container, options);
-
-            const markerPosition = new kakao.maps.LatLng(37.565329627481596, 127.0250327258859);
-            const marker = new kakao.maps.Marker({
-                position: markerPosition
-            });
-
-            marker.setMap(map);
-
-            // 강제로 리사이즈 처리
-            setTimeout(() => {
-                map.relayout();
-            }, 0);
-        }
-
-        window.onload = function () {
-            initMap();
-        };
     </script>
 </body>
 

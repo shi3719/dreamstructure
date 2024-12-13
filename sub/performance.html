@@ -265,6 +265,10 @@
 
             document.querySelector(`.sub_tab_button_${num}`).classList.add('on');
             document.querySelector(`.sub_tab_${num}`).classList.add('on');
+
+            const url = new URL(window.location.href);
+            url.searchParams.set('num', num); 
+            window.history.replaceState(null, '', url); 
         }
 
         const checkTab = () => {            
